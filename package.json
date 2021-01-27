@@ -5,14 +5,17 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node src/server/index.js",
-    "build-dev": "webpack-dev-server  --config webpack.dev.js --open"
+	"build": "webpack",
+    "build-dev": "webpack serve --config webpack.dev.js --open"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "webpack": "^5.18.0",
+    "webpack-cli": "^4.4.0"
   },
   "devDependencies": {
     "webpack-dev-server": "^3.11.2",

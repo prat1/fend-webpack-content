@@ -5,7 +5,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node src/server/index.js",
-    "build": "webpack"
+    "build-dev": "webpack --config webpack.dev.js --open",
+	"build-prod": "webpack --config webpack.prod.js"
   },
   "keywords": [],
   "author": "",
@@ -19,6 +20,7 @@
   "devDependencies": {
     "@babel/core": "^7.5.4",
     "@babel/preset-env": "^7.5.4",
+    "@webpack-cli/serve": "^1.2.2",
     "babel-loader": "^8.0.6",
     "html-webpack-plugin": "^4.5.1"
   }

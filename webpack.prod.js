@@ -3,6 +3,7 @@ const webpack = require('webpack')
 const HtmlWebPackPlugin = require('html-webpack-plugin')
 
 module.exports = {
+	mode:'production',
     entry: './src/client/index.js',
     devtool: 'source-map',
     module: {
@@ -14,11 +15,11 @@ module.exports = {
             }
         ]
     },
-	plugins: [ {
+	plugins: [ 
 		new HtmlWebPackPlugin({
 			template: "./src/client/views/index.html",
 			fileName: "./index.html",
 		})
-	}
+	
 	]
 }
